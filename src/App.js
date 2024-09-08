@@ -1,5 +1,7 @@
 import WordExpander from "./TextExpander/WordExpander";
 import LetterExpander from "./TextExpander/LetterExpander";
+import StarRating from "./StarRating/StarRating";
+import { Sample } from "./StarRating/StarRating";
 import "./App.css";
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
         btnColor="lightCoral"
         textDecoration="none"
         isBtnInline={true}
+        containerClassName="sample"
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ipsa
         culpa dolorem, a fugiat ducimus, esse dolore sint ex cupiditate ad
@@ -28,6 +31,7 @@ function App() {
         btnColor="lightblue"
         textDecoration="underline"
         isBtnInline={true}
+        containerClassName="sample"
       >
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam sunt
         quam, eaque nostrum amet libero vel maxime? Inventore officiis sequi,
@@ -43,7 +47,7 @@ function App() {
         btnColor="inherit"
         textDecoration="underline"
         isBtnInline={false}
-        containerClassName="third-container"
+        containerClassName="third-container sample"
         textClassName="third-text"
         btnClassName="third-btn"
       >
@@ -62,6 +66,7 @@ function App() {
         btnColor="lightCoral"
         textDecoration="none"
         isBtnInline={true}
+        containerClassName="sample"
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ipsa
         culpa dolorem, a fugiat ducimus, esse dolore sint ex cupiditate ad
@@ -75,6 +80,7 @@ function App() {
         btnColor="lightblue"
         textDecoration="underline"
         isBtnInline={true}
+        containerClassName="sample"
       >
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam sunt
         quam, eaque nostrum amet libero vel maxime? Inventore officiis sequi,
@@ -90,7 +96,7 @@ function App() {
         btnColor="inherit"
         textDecoration="underline"
         isBtnInline={false}
-        containerClassName="third-container"
+        containerClassName="third-container sample"
         textClassName="third-text"
         btnClassName="third-btn"
       >
@@ -99,6 +105,14 @@ function App() {
         corporis vitae molestiae eius aliquam reiciendis consectetur
         voluptatibus excepturi beatae, maiores totam!
       </LetterExpander>
+
+      <h2>Star Rating</h2>
+      <StarRating
+        messages={["Terrible", "Bad", "Okay", "Good", "Amazing"]}
+        defaultRating={3}
+        className="sample"
+      />
+      <Sample className="sample" />
     </>
   );
 }
